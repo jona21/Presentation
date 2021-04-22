@@ -1,0 +1,221 @@
+.homeWrapper #menu {
+	display: none;
+}
+
+#homeWrapper {
+	position: relative;
+}
+#homeWrapper h1 {
+	font-size: 4rem;
+	font-weight: 350;
+	color: #000000cf;
+}
+
+#homeWrapper h2 {
+	font-size: 5rem;
+	font-weight: bolder;
+	color: #000000e1;
+}
+
+#avatar {
+	object-fit: cover;
+	width: 300px;
+	height: 300px;
+	border: 10px solid rgba(0, 0, 0, 0.596);
+}
+
+.bg-yellow {
+	background-color: #f2e169;
+}
+
+#homeWrapper a {
+	font-size: 1.5rem;
+}
+
+a.text-dark {
+	color: #000000f2 !important;
+}
+
+#homeVideo {
+	position: fixed;
+	object-fit: cover;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #f2e2699e;
+	z-index: 1;
+}
+
+#homeContent {
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	right: 0;
+	width: fit-content;
+	margin: auto;
+}
+
+.writing-text_cursor {
+	width: 100%;
+	height: 100%;
+	animation: pulse 0.7s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+#menu-row a {
+	width: 100%;
+	display: block;
+	text-align: center;
+	border: 4px solid #000000cc;
+	border-radius: 100%;
+	padding: 10px;
+	width: 120px;
+	height: 120px;
+	color: #000000cc;
+	text-decoration: none;
+}
+
+#menu-row a:hover {
+	border-color: transparent;
+	background-color: #000000cc;
+	color: white;
+}
+
+#menu-row a:hover span {
+	color: white;
+}
+
+#menu-row a svg {
+	width: 50px;
+	height: 50px;
+}
+
+#menu-row a span {
+	font-size: 1rem;
+	color: #000000cc;
+	width: 100%;
+}
+
+#homeDescription {
+	display: grid;
+}
+
+@media (max-width: 575px) {
+	#homeWrapper h1 {
+		font-size: 1rem;
+	}
+
+	#homeWrapper h2 {
+		font-size: 2.5rem;
+	}
+
+	#homeWrapper a {
+		font-size: 0.8rem;
+	}
+
+	#menu-row a span {
+		font-size: 0.5rem;
+	}
+	#avatar {
+		width: 150px;
+		height: 150px;
+	}
+	#menu-row a {
+		width: 90px;
+		height: 90px;
+		margin: auto;
+	}
+
+	#menu-row a svg {
+		width: 25px;
+		height: 25px;
+	}
+
+	#menu-row a span {
+		font-size: 0.8rem !important;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+	#homeWrapper h1 {
+		font-size: 2rem;
+	}
+
+	#homeWrapper h2 {
+		font-size: 3rem;
+	}
+
+	#homeWrapper a {
+		font-size: 1rem;
+	}
+
+	#menu-row a span {
+		font-size: 0.8rem;
+	}
+	#avatar {
+		width: 150px;
+		height: 150px;
+	}
+	#menu-row a {
+		width: 90px;
+		height: 90px;
+		margin: auto;
+	}
+
+	#menu-row a svg {
+		width: 25px;
+		height: 25px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+	#homeWrapper h1 {
+		font-size: 3rem;
+	}
+
+	#homeWrapper h2 {
+		font-size: 4rem;
+	}
+
+	#homeWrapper a {
+		font-size: 1.5rem;
+	}
+
+	#menu-row a span {
+		font-size: 1rem;
+	}
+	#avatar {
+		width: 200px;
+		height: 200px;
+	}
+	#menu-row a {
+		width: 120px;
+		height: 120px;
+		margin: auto;
+	}
+
+	#menu-row a svg {
+		width: 50px;
+		height: 50px;
+	}
+}
